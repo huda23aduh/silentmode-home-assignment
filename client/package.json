@@ -1,0 +1,12 @@
+{
+  "name": "sm-homeassignment-client",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/client.js"
+  },
+  "dependencies": {
+    "ws": "^8.13.0",
+    "dotenv": "^16.0.3",
+    "uuid": "^9.0.0"
+  }
+}
