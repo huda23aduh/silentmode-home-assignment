@@ -1,0 +1,16 @@
+{
+  "name": "sm-homeassignment-server",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "NODE_ENV=development node --max-old-space-size=1024 src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.13.0",
+    "uuid": "^9.0.0",
+    "dotenv": "^16.0.3",
+    "morgan": "^1.10.0"
+  }
+}
