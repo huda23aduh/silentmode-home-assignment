@@ -163,6 +163,48 @@ Response example:
 ```
 
 ---
+## 📁 Creating Dummy Test Files
+🪟 Windows (PowerShell)
+```json
+# Create 100MB file in client directory
+cd client
+fsutil file createnew 100mb.txt 104857600
+
+# Or using PowerShell (if fsutil not available)
+[System.IO.File]::WriteAllBytes("100mb.txt", [byte[]]::new(104857600))
+```
+
+🍎 macOS (Terminal)
+```json
+# Navigate to client directory
+cd client
+
+# Create 100MB file (choose one method)
+
+# Method 1: Using dd (recommended)
+dd if=/dev/urandom of=100mb.txt bs=1m count=100
+
+# Method 2: Using head (alternative)
+base64 /dev/urandom | head -c 100m > 100mb.txt
+```
+
+🐧 Linux (Terminal)
+```json
+# Navigate to client directory
+cd client
+
+# Create 100MB file (choose one method)
+
+# Method 1: Using dd (recommended)
+dd if=/dev/urandom of=100mb.txt bs=1M count=100
+
+# Method 2: Using fallocate (fastest)
+fallocate -l 100M 100mb.txt
+
+# Method 3: Using head
+base64 /dev/urandom | head -c 100M > 100mb.txt
+```
+---
 
 ## 🎯 Trigger a Download
 
