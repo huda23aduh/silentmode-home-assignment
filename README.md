@@ -91,8 +91,8 @@ Clients initiate outbound WebSocket connections and wait for remote control inst
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git git@github.com:huda23aduh/silentmode-home-assignment.git
+cd silentmode-home-assignment
 ```
 
 ---
